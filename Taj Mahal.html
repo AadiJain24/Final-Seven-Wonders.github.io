@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=divice-width,initial-scale=1.0">
+<title>Taj Mahal</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+});
+</script>
+<style>
+body{
+background-color:yellow;
+}
+.Homenav{
+text-decoration:none;
+color:black;
+text-align:center;
+}
+.nav{
+text-decoration:none;
+color:red;
+}
+.Homenav:hover{color:blue;}
+.Homenav:before{color:black;}
+.boxed{
+border: 5px solid black;
+animation: textanimation 3s infinite;
+}
+.footer{
+text-align:center;
+}
+<!--Nav Bar-->
+ul{list-style-type:none; margin:0; padding:0;}
+li{display:inline-block; padding-top:5px; position:relative; margin-left:0px; padding-bottom:5px;}
+nav a:hover{color:blue;}
+nav a:hover::before{width:100%;}
+Nav a {text-decoration:none; color:red; text-transform:uppercase; font-size:14px}
+nav a::before{display:block; background-color:red; position:absolute; width:0%; height:5px; top:0; transition: all ease-in-out 250ms;}
+nav{text-align:center;}
+
+@keyframes textanimation{
+0%{background-color:pink;}
+25%{background-color:whitesmoke;}
+50%{background-color:tomato;}
+75%{background-color:yellow;}
+100%{background-color:blue;}
+}
+
+<!--slide-->
+#main-banner{
+overflow:hidden;
+max-height:500px;
+width:50%;
+}
+#main-banner img{
+width:50%;
+}
+#slider{
+overflow:hidden;
+}
+#slides{
+width:500%;
+margin:0;
+left:0;
+animation:15s slide-cycle infinite;
+font-size:0;
+position:relative;
+text-align:center;
+}
+#slides img{
+width:20%;
+float:left;
+}
+
+@keyframes slide-cycle{
+0%{left:0%;}
+45%{left:-100%;}
+90%{left:-200%;}
+100%{left:0%;}
+}
+
+.diagla{animation:stfoftt 3s infinite;}
+
+@keyframes stfoftt{
+0%{background-color:whitesmoke;}
+25%{background-color:orange;}
+50%{background-color:yellow;}
+75%{background-color:green;}
+100%{background-color:purple;}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<a href="index.html" class="Homenav"><h1>Seven Wonders of the World</h1></a>
+<div class="diagla">
+<hr>
+<nav>
+<ul class="nav">
+<li class="gg"><a href="Great Wall Of China.html">Great Wall Of China</a>&nbsp; &nbsp;</li>
+<li><a href="Taj Mahal.html">Taj Mahal</a>&nbsp; &nbsp;</li>
+<li><a href="Colosseum.html">Colosseum</a>&nbsp; &nbsp;</li>
+<li><a href="Christ the Redeemer.html">Christ the Redeemer</a>&nbsp; &nbsp;</li>
+<li><a href="Chichen Itza.html">Chichen Itza</a>&nbsp; &nbsp;</li>
+<li><a href="Petra.html">Petra</a>&nbsp; &nbsp;</li>
+<li><a href="Machu Picchu.html">Machu Picchu</a>&nbsp; &nbsp;</li>
+</ul>
+</nav>
+<hr>
+</div>
+<center><h2>Taj Mahal</h2></center>
+</div>
+<center>
+<div class="middle">
+<table>
+<tr>
+<td>
+<div class="boxed">
+Taj Mahal is a magestic tomb and was built by Shah Jahan, the fifth Mughal emperor(1628-1658)<br>and he constructed it to hold the tomb of his wife; Mumtaz Mahal.<br>  More than 20,000 workers were employed from many different places(India, Persia, the Ottoman Empire, and Europe)<br>to finish the monument.  It costed 32 million rupees (391535.36 usd) to build.  It is located in Agra, Uttar Pradesh, India.
+</div>
+<br>
+<br>
+<br>
+</td>
+<tr>
+<td>
+<div class="boxed">
+Taj Mahal was completed in 1643, but other phases of the project continued after 1643.<br>
+Mumtaz Mahal's tomb is flanked by two mosques -- one is a prerequisite, but the other is a dummy <br>built only in the interests of symmetry.
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<img src="Taj Mahal.jpeg" width="600" height="400">
+</td>
+</tr>
+</table>
+</div>
+</center>
+<div class="footer">
+<br>
+<a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank">Click here</a> to know more about Taj Mahal
+</div>
+</body>
+</html>

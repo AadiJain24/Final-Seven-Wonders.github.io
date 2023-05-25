@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<title>Homepage</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=divice-width,initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+alert("Welcome To The Seven Wonders Of The World")
+$(".logo").fadeOut(3000);
+$(".logo").fadeIn();
+});
+
+$('.btn').click(function()
+{
+$(document).fadeOut();
+});
+</script>
+<style>
+.header{padding:50px; background-color:lightpink;}
+.middle{padding:400px; background-image:url("7-wonders-of-the-world.jpg"); background-repeat: no-repeat; background-size:cover; animation:15s slide-cycle infinite;}
+.wrapper{padding:100px; background-color:yellow;}
+.footer{padding:50px; background-color:lightblue; text-align: center;}
+.content{border: 5 px dotted red; background-color:lightgreen; font-family: sans-serif, Times New Roman;}
+.hbo{list-style-type:square; padding: 20px;}
+.hbo{padding: 10px; background-color:orANGE;}
+#learn{text-align: right;}
+.dis{color:blue; text-shadow: 2px 2px red;}
+font{text-shadow:2px 2px red;}
+.links{text-align:right;}
+.btn{float:right;}
+nav a{color:blue; text-decoration:none; font-size:14px;}
+nav a:hover{color:red;}
+nav a:hover::before{width:100%;}
+nav a:before{display:block; top:0; width:0%; height:5px; position:absolute; background-color:blue; transition: all ease-in-out 250ms}
+.navul{list-style-type:none; margin:0; padding:0;}
+.navli{display:inline-block; padding-top:23px; margin-left:20px; position:relative;}
+
+.mathcounts{text-decoration:none; color:black; position:absolute; background-color:lightblue; width:500; 
+text-align:center;}
+<!--Animation(not able to work)
+@keyframes indexanimation{
+0%{top:200px; left:500px; background-color:red;}
+25%{top:200px; left:500px; background-color:blue;}
+50%{top:200px; left:500px; background-color:purple;}
+75%{top:200px; left:500px; background-color:yellow;}
+100%{top:200px; left:500px; background-color:green;}
+}
+-->
+<!--.analyzing_data_structures{
+background-color:red;
+animation:stroke 4s infinite;
+border-radius:50%;
+width:100;
+height:100;
+}-->
+
+<!--Another Animation-->
+
+@keyframes stroke{
+0%{top:auto; left:0px;}
+25%{top:auto; left:50px;}
+50%{top:auto; left:100px;}
+75%{top:auto; left:50px;}
+100%{top:auto; left:0px;}
+}
+
+@keyframes slide-cycle{
+0%{left:0%;}
+14%{left:-50%;}
+28%{left:-100%;}
+34%{left:-150%;}
+50%{left:-200%;}
+70%{left:-300%;}
+0%{left:0%;}
+100%{left:0%;}
+}
+
+.YOURMOM{animation: rotation 5s infinite;}
+
+@keyframes rotation{
+0%{transform:rotate(0deg);}
+25%{transform:rotate(0deg);}
+50%{transform:rotate(180deg);}
+75%{transform:rotate(180deg);}
+100%{transform:rotate(360deg);}
+}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo">
+<img src="download__6_-removebg-preview (2).png" width="100" height="100" class="YOURMOM">
+</div>
+<div class="links">
+<nav>
+<ul class="navul">
+<li class="navli"><a href="Great Wall Of China.html" id="learn">Learn</a>&nbsp;</li>
+<li class="navli"><a href="A1.html">FAQ</a>&nbsp;</li>
+<li class="navli"><a href="https://www.memphistours.com/Jordan/Jordan-and-Beyond-Tours/travel-around-the-world/new-7-wonders-of-the-world-tour" target="_blank">Travel</a>&nbsp;</li>
+</ul>
+<button class="btn"><a href="Feedback.html">Feedback</a></button>
+</nav>
+</div>
+</div>
+<div class="middle">
+<div class="mathcounts">
+<h1>Welcome to the Seven Wonders Of The World</h1>
+</div>
+</div>
+<div class="wrapper">
+<font color="blue" class="imformation">
+<h1>This website contains information about the <b>new</b> Seven Wonders of the World.
+The seven wonders of the world are:</h1><br>
+</font>
+<ul class="hbo">
+<li class="dis"><b>Great Wall of China</b></li>
+<li class="dis"><b>Taj Mahal</b></li>
+<li class="dis"><b>Colosseum</b></li>
+<li class="dis"><b>Christ the Redeemer</b></li>
+<li class="dis"><b>Chichen Itza</b></li>
+<li class="dis"><b>Petra</b></li>
+<li class="dis"><b>Machu Picchu</b></li>
+</ul>
+</div>
+<!--<div class="analyzing_data_structures">
+</div>-->
+<div class="footer">
+<div class="ptb">
+
+<a href="https://en.wikipedia.org/wiki/New_7_Wonders_of_the_World" target="_blank">Click here</a>&nbsp;
+
+
+to know more about the Seven Wonders of the World.
+</div>
+</div>
+</body>
+</html>

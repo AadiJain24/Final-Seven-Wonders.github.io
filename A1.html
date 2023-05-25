@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<title>FAQ</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=divice-width,initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+$(function(){
+$('.faq-list-item').click(function(){
+var $answer=$(this).find('.answer');
+
+if($answer.hasClass('open')){
+$answer.removeClass('open');
+$answer.slideUp();
+$(this).find('span').text('+');
+}
+else{
+$answer.addClass('open');
+$answer.slideDown();
+$(this).find('span').text('-');
+}
+});
+});
+</script>
+<style>
+.faqbox{
+padding:20px;
+font-family:"times new roman","times","serif";
+border:2px solid blue;
+background-color:red;
+color:yellow;
+opacity:0.8;
+}
+
+.answer{
+display:none;
+padding: 5px 0px;
+margin-bottom:10px;
+}
+
+.faq-list-item{
+border-bottom:2px solid #ccc;
+margin:10px;
+position:relative;
+curser:pointer;
+}
+
+.faq-list-item span{
+position:absolute;
+top:10px;
+right:200px;
+font-size:20px;
+display:inline-block;
+}
+
+body{animation: nyan 3s infinite;}
+
+@keyframes nyan{
+0%{background-color:yellow;}
+25%{background-color:orange;}
+50%{background-color:purple;}
+75%{background-color:red;}
+100%{background-color:yellow;}
+}
+</style>
+</head>
+<body>
+<center><h1>Frequently Asked Questions</h1></center>
+<div class="faqbox">
+<ul type="none">
+<li class="faq-list-item">
+<h2>Can I visit these wonders of the world?</h2>
+<span>+</span>
+<div class="answer">Yes, you can visit every wonder of the world.</div></li>
+<li class="faq-list-item">
+<h2>Where can I learn about the Seven Wonders of the Ancient World?</h2>
+<span>+</span>
+<div class="answer">You can learn about the Seven Wonders of The Ancient World <a href="https://education.nationalgeographic.org/resource/seven-wonders-ancient-world/" target="_blank">here</a></div></li>
+<li class="faq-list-item">
+<h2>When is the best time to visit the Seven Wonders Of the World?</h2>
+<span>+</span>
+<div class="answer">The best time to visit the Seven Wonders of the world are Spring and autumm</div></li>
+<li class="faq-list-item">
+<h2>Which is the least expensive wonder of the world?</h2>
+<span>+</span>
+<div class="answer">The Colosseum is most likely to fit your budget.</div></li>
+<li class="faq-list-item">
+<h2>How much would it cost to visit all the Seven Wonders of The World?</h2>
+<span>+</span>
+<div class="answer">It would probably cost $4,500 to $6,000.</div></li>
+</ul>
+</div>
+<br>
+<div><center><a href="index.html"><img src="Home-removebg-preview (1).png" width="200" heigth="150"></a></center></div>
+
+</body>
+</html>
